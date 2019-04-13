@@ -1,0 +1,11 @@
+# name : reselect state denormalizer
+# contributor : Seong Yong-ju <sei40kr@gmail.com>
+# key: denormalizer
+# --
+
+const $1Selector = createSelector(
+  (state) => state.${1:models}.allIds,
+  (state) => state.$1.byId,
+  (allIds, byId) => allIds.map((id) => byId[id])
+);
+$0

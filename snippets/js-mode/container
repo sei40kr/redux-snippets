@@ -5,18 +5,17 @@
 
 import { connect } from 'react-redux';
 
+import `(redux-snippets//container-component-name)` from '../components/`(redux-snippets//container-component-name)`';
+
 const mapStateToProps = (state, ownProps) => ({
   $0
 });
 
 const mapDispatchToProps = (dispatch, ownProps) => ({});
 
-const mergeProps = (stateProps, dispatchProps, ownProps) => ({
-  ...stateProps,
-  ...dispatchProps,
-  ...ownProps,
-});
+const `(redux-snippets//file-class-name)` = connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(`(redux-snippets//container-component-name)`);
 
-export default connect(mapStateToProps, mapDispatchToProps, mergeProps)(
-  `(file-name-nondirectory (file-name-sans-extension (buffer-file-name)))`
-);
+export default `(redux-snippets//file-class-name)`;
