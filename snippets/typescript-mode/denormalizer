@@ -4,8 +4,8 @@
 # --
 
 const $1Selector = createSelector(
-  (state) => state.${1:models}.allIds,
-  (state) => state.$1.byId,
+  (state: IRootState) => state.${1:models}.allIds,
+  (state: IRootState) => state.$1.byId,
   (
     allIds: string[],
     byId: {
