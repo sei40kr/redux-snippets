@@ -3,15 +3,13 @@
 # key: container
 # --
 
-import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 
 const mapStateToProps = (state, ownProps) => ({
   $0
 });
 
-const mapDispatchToProps = (dispatch, ownProps) => bindActionCreator({
-});
+const mapDispatchToProps = (dispatch, ownProps) => ({});
 
 const mergeProps = (stateProps, dispatchProps, ownProps) => ({
   ...stateProps,
