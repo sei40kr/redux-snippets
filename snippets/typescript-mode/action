@@ -3,7 +3,10 @@
 # key: action
 # --
 
-export const ${1:$(upcase (s-snake-case yas-text))} = '${1:$(upcase (s-snake-case yas-text))}';
+interface I${1:$(s-upper-camel-case yas-text)}Action {
+  type: '${1:$(upcase (s-snake-case yas-text))}';
+  payload: {};
+}
 
 export const ${1:actionName} = (${2:args}) => ({
   type: '${1:$(upcase (s-snake-case yas-text))}',
