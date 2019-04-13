@@ -1,0 +1,10 @@
+# name : Redux state normalizer
+# contributor : Seong Yong-ju <sei40kr@gmail.com>
+# key: normalizer
+# --
+
+const ${1:models}Converter = ($1: Array<${2:Model}>) => ({
+  allIds: $1.map(model => model.${3:id}),
+  byId: Object.assign({}, ...$1.map(model => ({ [model.$3]: model }))),
+});
+$0
