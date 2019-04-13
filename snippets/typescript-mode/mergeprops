@@ -1,0 +1,8 @@
+# name : mergeProps definition template
+# contributor : Seong Yong-ju <sei40kr@gmail.com>
+# key: mergeprops
+# --
+
+const mergeProps = (stateProps: IStateProps, dispatchProps: IDispatchProps, ownProps: I`(redux-snippets//container-component-name)`Props): I`(redux-snippets//container-component-name)`Props => ({
+  $0
+});
