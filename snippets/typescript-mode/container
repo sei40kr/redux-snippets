@@ -6,19 +6,19 @@
 import { connect } from 'react-redux';
 import { Dispatch } from 'redux';
 
-import `(redux-snippets//container-component-name)`, { IProps as I`(redux-snippets//container-component-name)`Props } from '../components/`(redux-snippets//container-component-name)`';
+import `(redux-snippets//container-component-name)` from '../components/`(redux-snippets//container-component-name)`';
 
 import { IState as IRootState } from '../${1:$$(yas-choose-value '("reducers" "modules"))}';
 
 interface IStateProps {}
 
-const mapStateToProps = (state: IRootState, ownProps: I`(redux-snippets//container-component-name)`Props): IStateProps => ({
+const mapStateToProps = (state: IRootState, _ownProps: {}): IStateProps => ({
   $0
 });
 
 interface IDispatchProps {}
 
-const mapDispatchToProps = (dispatch: Dispatch, ownProps: I`(redux-snippets//container-component-name)`Props): IDispatchProps => ({});
+const mapDispatchToProps = (dispatch: Dispatch, _ownProps: {}): IDispatchProps => ({});
 
 const `(redux-snippets//file-class-name)` = connect(
   mapStateToProps,

@@ -7,11 +7,11 @@ import { connect } from 'react-redux';
 
 import `(redux-snippets//container-component-name)` from '../components/`(redux-snippets//container-component-name)`';
 
-const mapStateToProps = (state, ownProps) => ({
+const mapStateToProps = (state, _ownProps) => ({
   $0
 });
 
-const mapDispatchToProps = (dispatch, ownProps) => ({});
+const mapDispatchToProps = (dispatch, _ownProps) => ({});
 
 const `(redux-snippets//file-class-name)` = connect(
   mapStateToProps,
