@@ -12,12 +12,18 @@
       byte-compile-current-file)
      (:else (buffer-file-name))))))
 
-(defun redux-snippets-initialize ()
+(defun redux-snippets//initialize ()
   (add-to-list 'yas-snippet-dirs 'redux-snippets-dir t)
   (yas-load-directory redux-snippets-dir t))
 
+(defun redux-snippets//file-class-name ()
+  (file-name-nondirectory (file-name-sans-extension (buffer-file-name))))
+
+(defun redux-snippets//container-component-name ()
+  (s-chop-suffix "Container" (redux-snippets//file-class-name)))
+
 (eval-after-load 'yasnippet
-  '(redux-snippets-initialize))
+  '(redux-snippets//initialize))
 
 (provide 'redux-snippets)
 
