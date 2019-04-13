@@ -3,6 +3,6 @@
 # key: mergeprops
 # --
 
-const mergeProps = (stateProps, dispatchProps, ownProps) => ({
+const mergeProps = (stateProps, dispatchProps, _ownProps) => ({
   $0
 });

@@ -3,6 +3,6 @@
 # key: mergeprops
 # --
 
-const mergeProps = (stateProps: IStateProps, dispatchProps: IDispatchProps, ownProps: I`(redux-snippets//container-component-name)`Props): I`(redux-snippets//container-component-name)`Props => ({
+const mergeProps = (stateProps: IStateProps, dispatchProps: IDispatchProps, _ownProps: {}): I`(redux-snippets//container-component-name)`Props => ({
   $0
 });
