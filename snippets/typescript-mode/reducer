@@ -1,0 +1,17 @@
+# name : Redux reducer template
+# contributor : Seong Yong-ju <sei40kr@gmail.com>
+# key: reducer
+# --
+
+interface IState {
+  $0
+};
+
+const initialState: IState = {};
+
+export default (state: IState = initialState, action: Action): IState => {
+  switch (action.type) {
+    default:
+      return state;
+  }
+};
