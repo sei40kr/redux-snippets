@@ -3,7 +3,7 @@
 # key: reducer
 # --
 
-interface IState {
+export interface IState {
   $0
 };
 
