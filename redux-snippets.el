@@ -1,4 +1,20 @@
+;; -*- lexical-binding: t -*-
+
 ;;; redux-snippets.el --- Redux snippets for yasnippet
+
+;; Copyright (c) 2019 Seong Yong-ju.
+
+;; Author: Seong Yong-ju <sei40kr@gmail.com>
+;; Version: 1.0.0
+;; Package-Requires: (yasnippet s)
+;; Keywords: redux, yasnippet, snippets
+;; URL: https://github.com/sei40kr/redux-snippets
+
+;;; Commentary:
+
+;; Redux snippets for yasnippet.
+
+;;; Code:
 
 (require 'yasnippet)
 
@@ -12,6 +28,7 @@
       byte-compile-current-file)
      (:else (buffer-file-name))))))
 
+;;;###autoload
 (defun redux-snippets//initialize ()
   (add-to-list 'yas-snippet-dirs 'redux-snippets-dir t)
   (yas-load-directory redux-snippets-dir t))
